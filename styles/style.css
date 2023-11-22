@@ -190,27 +190,26 @@ ol {
 
 /* Чекбокс */
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 20px;
   height: 20px;
-  vertical-align: middle;
-  border: 1px solid #FFF;
+  margin-right: 5px;
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox:checked +.search-form__pseudo-checkbox::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  background-color: #fff;
 }
 
 .search-form__checkbox-list {
   display: flex;
   align-items: center;
   column-gap: 15px;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox:before {
-  content: '';
-  display: block;
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  margin-left: 1.5px;
-  margin-top: 1.5px;
 }
 
 .search-form__checkbox-list > .search-form__label:hover > .search-form__label-text {
@@ -257,6 +256,11 @@ ol {
 }
 
 /* Общие стили */
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+}
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
