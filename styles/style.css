@@ -53,22 +53,6 @@ ol {
   align-self: flex-end;
 }
 
-.search-form {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-}
-
-.content__list {
-  position: relative;
-  height: 298px;
-  overflow: auto;
-}
-
-.content__details > .title {
-  margin-bottom: 26px;
-}
-
 .result__video-container {
   position: relative;
   width: 711px;
@@ -81,8 +65,20 @@ ol {
   object-fit: cover;
 }
 
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .content__video-card {
@@ -90,20 +86,14 @@ ol {
   justify-content: flex-end;
 }
 
-.content__video-card-thumbnail {
-  width: 193px;
-  height: 103px;
-  object-fit: cover;
-}
-
 .content__video-card-description-container {
   width: 100%;
 }
 
-.search-form__fieldset-title {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 5px;
+.content__video-card-thumbnail {
+  width: 193px;
+  height: 103px;
+  object-fit: cover;
 }
 
 .title {
@@ -116,6 +106,16 @@ ol {
 
 .content__accent {
   color: #545050;
+}
+
+.content__list {
+  position: relative;
+  height: 298px;
+  overflow: auto;
+}
+
+.content__details > .title {
+  margin-bottom: 26px;
 }
 
 /* Карточки */
